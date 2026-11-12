@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#073b5a">
+  <title>News & Announcements | AeroMed Germany</title>
+  <meta name="description" content="Updates and announcements from AeroMed Germany, with links to their Google Docs details.">
+  <link rel="canonical" href="https://germanpg854.github.io/news.html">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="AeroMed Germany home"><span class="brand-name">AeroMed <span>Germany</span><small>GLOBAL PATHWAY. GERMAN RESIDENCY.</small></span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="news.html" aria-current="page">News</a><a href="bundeslaender.html">German states</a><a href="documents.html">Documents & Forms</a><a class="nav-cta" href="login.html">Member login ↗</a></nav>
+  </header>
+  <main id="main" class="library-page">
+    <section class="library-heading"><p class="eyebrow">AEROMED GERMANY UPDATES</p><h1>News &<br><em>announcements.</em></h1><p>Updates are listed with their publication date and link to the full Google Docs announcement.</p></section>
+    <section class="news-listing" aria-live="polite" aria-busy="true"><p id="news-status" class="library-status">Loading announcements…</p><div id="news-list" class="news-grid"></div></section>
+  </main>
+  <footer class="site-footer"><a class="brand footer-brand" href="index.html"><span class="brand-name">AeroMed <span>Germany</span><small>GLOBAL PATHWAY. GERMAN RESIDENCY.</small></span></a><div class="footer-links"><a href="bundeslaender.html">German states</a><a href="documents.html">Documents & Forms</a><a href="https://www.instagram.com/germanpg854/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="mailto:germanpg854@gmail.com">Email</a></div><p>© <span id="year"></span> AeroMed Germany. Independent educational resource.</p></footer>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="supabase-client.js"></script>
+  <script src="news.js"></script>
+</body>
+</html>

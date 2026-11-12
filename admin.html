@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#073b5a"><title>Admin tools | AeroMed Germany</title><meta name="robots" content="noindex,nofollow"><meta name="description" content="AeroMed Germany administrator controls."><link rel="stylesheet" href="styles.css"></head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><a class="brand" href="index.html" aria-label="AeroMed Germany home"><span class="brand-name">AeroMed <span>Germany</span><small>GLOBAL PATHWAY. GERMAN RESIDENCY.</small></span></a><nav class="main-nav" aria-label="Admin navigation"><a href="members.html">Member library</a><button id="admin-signout" class="button button-quiet" type="button">Sign out</button></nav></header>
+  <main id="main" class="library-page">
+    <section class="library-heading"><p class="eyebrow">ADMINISTRATOR</p><h1>Site <em>controls.</em></h1><p>Add Google Docs announcements and private member resources.</p></section>
+    <p id="admin-status" class="admin-status" role="status" aria-live="polite">Checking administrator access…</p>
+    <div id="admin-tools" hidden>
+      <section class="admin-tool-panel"><p class="eyebrow">NEWS & ANNOUNCEMENTS</p><h2>Add a Google Docs update</h2><form id="announcement-form" class="upload-form"><label for="announcement-title">Title</label><input id="announcement-title" name="title" required maxlength="160"><label for="announcement-date">Publication date</label><input id="announcement-date" name="published_on" type="date" required><label for="announcement-url">Google Docs share link</label><input id="announcement-url" name="google_doc_url" type="url" placeholder="https://docs.google.com/document/d/..." required><button class="button button-dark" type="submit">Publish announcement ↗</button></form><ul id="admin-news-list" class="document-list"></ul></section>
+      <section class="admin-tool-panel"><p class="eyebrow">MEMBER RESOURCE LIBRARY</p><h2>Add a member resource</h2><form id="resource-form" class="upload-form"><label for="resource-title">Resource title</label><input id="resource-title" name="title" required maxlength="160"><label for="resource-description">Short description (optional)</label><input id="resource-description" name="description" maxlength="300"><label for="resource-file">Choose a file</label><input id="resource-file" name="file" type="file" required><small>Only upload files you have permission to share. Files are private to signed-in members.</small><button class="button button-dark" type="submit">Upload resource ↑</button></form><ul id="admin-resource-list" class="document-list"></ul></section>
+    </div>
+  </main>
+  <footer class="site-footer"><a class="brand footer-brand" href="index.html"><span class="brand-name">AeroMed <span>Germany</span><small>GLOBAL PATHWAY. GERMAN RESIDENCY.</small></span></a><p>© <span id="year"></span> AeroMed Germany.</p></footer>
+  <script src="script.js"></script><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="supabase-config.js"></script><script src="supabase-client.js"></script><script src="admin.js"></script>
+</body></html>

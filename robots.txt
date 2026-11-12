@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin.html
+Disallow: /login.html
+Disallow: /members.html
+Sitemap: https://germanpg854.github.io/sitemap.xml
